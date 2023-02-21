@@ -1,0 +1,200 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  background: linear-gradient(rgba(74, 90, 91, 0.75), rgba(81, 94, 101, 0.75)), url("wsebg.jpg");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
+  font-size: 55px;
+  font-weight: 500px;
+  color: rgb(213, 205, 52);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.memhead{
+  color: bisque;
+  
+}
+
+.box{
+  font-size: 35px;
+  font-weight: 500px;
+  color: bisque;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  height: 30vh;
+  width: 100%;
+}
+
+.downButton{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.downButton a{
+  text-decoration: none;
+  color: rgb(213, 205, 52);
+}
+
+.members{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  color: aqua;
+}
+
+.fixedpopulation{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.popcalculator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.calculatedData{
+  align-items: center;
+  display: none;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.inputfield{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+label{
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#findpop{
+  padding: 10px;
+  background-color: cyan;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+
+}
+
+input{
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: none;
+  /* width: 10%; */
+}
+
+.calculators{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(rgb(235, 235, 19, 0.5), rgb(195, 194, 194, 0.5));
+}
+
+.fixedpophead{
+  font-size: 35px;
+  font-weight: 500;
+  color: red;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.members p{
+  animation-name: memname;
+  animation-duration: 3s;
+}
+
+.demand1{
+  animation-name: demand1;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+}
+.demand2{
+  animation-name: demand1;
+  animation-duration: 2s;
+  animation-delay: 0.4s;
+}
+.demand3{
+  animation-name: demand1;
+  animation-duration: 2s;
+  animation-delay: 0.6s;
+}
+.demand4{
+  animation-name: demand1;
+  animation-duration: 2s;
+  animation-delay: 0.8s;
+}
+.demand5{
+  animation-name: demand1;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+.demand6{
+  animation-name: demand1;
+  animation-duration: 2s;
+  animation-delay: 1.2s;
+}
+
+@keyframes demand1 {
+  0%   {
+    transform: translateX(-500px);
+  }
+  25%  {
+  		scale: 1.2;
+  }
+  50%  {
+    scale: 1.5;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes memname {
+  0%   {
+    transform: translateX(-500px);
+  }
+  25%  {
+  		transform: translateX(200px);
+  }
+  50%  {
+    transform: translateX(450px);
+  }
+  100% {
+    transform: translateX(00px);
+  }
+}
