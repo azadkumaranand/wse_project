@@ -78,6 +78,13 @@
   flex-direction: column;
 }
 
+.note{
+  padding: 5px;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+}
+
 .calculatedData{
   align-items: center;
   display: none;
@@ -214,8 +221,27 @@ input{
   animation-duration: 2s;
   animation-delay: 1.2s;
 }
+.demand7{
+  animation-name: demand7;
+  animation-duration: 2s;
+  animation-delay: 1.2s;
+}
 
 @keyframes demand1 {
+  0%   {
+    transform: translateX(-500px);
+  }
+  25%  {
+  		scale: 1.2;
+  }
+  50%  {
+    scale: 1.5;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes demand7 {
   0%   {
     transform: translateX(-500px);
   }
