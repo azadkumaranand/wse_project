@@ -30,7 +30,7 @@ findpop.addEventListener("click", ()=>{
   let losses1 = ((200*total_population)*30/100)/1000000;
   document.getElementById("loss").innerHTML = losses1 + " MLD" 
   // let max_daily_consume = document.getElementById("maxdailyconsup").innerHTML = ((200*total_population)*30/100)/1000000 + " MLD";
-  let totaldemand1 = (parseInt(docmestic_demand1)+parseInt(industrial_demand1)+parseInt(institurinal_demand1)+parseInt(fire_demand1)+parseInt(losses1))
+  let totaldemand1 = (parseInt(docmestic_demand1)+parseInt(industrial_demand1)+parseInt(institurinal_demand1)+parseInt(losses1))
   document.getElementById("totaldemand").innerHTML = totaldemand1 + " MLD";
   console.log(totaldemand1, total_population)
   let max_daily_consume1 = 1.8*(totaldemand1*1000000/total_population)
