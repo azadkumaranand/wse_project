@@ -15,14 +15,27 @@ findpop.addEventListener("click", ()=>{
 
   let firedemand = Math.max(firedemand1, firedemand2, firedemand3)
   
-  console.log(total_population)
+  // console.log(total_population)
   document.getElementById("totalpop").innerHTML = total_population;
-  document.getElementById("domdemand").innerHTML = (200*total_population)/1000000 + " MLD";
-  document.getElementById("indudemand").innerHTML = ((200*total_population)*20/100)/1000000 + " MLD";
-  document.getElementById("insdemand").innerHTML = ((200*total_population)*30/100)/1000000 + " MLD";
-  document.getElementById("firedemand").innerHTML = firedemand/1000000 + " MLD";
-  document.getElementById("publdemand").innerHTML = ((200*total_population)*10/100)/1000000 + " MLD";
-  document.getElementById("loss").innerHTML = ((200*total_population)*30/100)/1000000 + " MLD";
+  let docmestic_demand1 = (200*total_population)/1000000
+  document.getElementById("domdemand").innerHTML =  docmestic_demand1 + " MLD";
+  let industrial_demand1 = ((200*total_population)*20/100)/1000000
+  document.getElementById("indudemand").innerHTML = industrial_demand1 + " MLD";
+  let institurinal_demand1 = ((200*total_population)*30/100)/1000000
+  document.getElementById("insdemand").innerHTML = institurinal_demand1 + " MLD";
+  let fire_demand1 = firedemand/1000000
+  document.getElementById("firedemand").innerHTML = fire_demand1 + " MLD";
+  let public_demand1 = ((200*total_population)*10/100)/1000000
+  document.getElementById("publdemand").innerHTML = public_demand1 + " MLD";
+  let losses1 = ((200*total_population)*30/100)/1000000;
+  document.getElementById("loss").innerHTML = losses1 + " MLD" 
+  // let max_daily_consume = document.getElementById("maxdailyconsup").innerHTML = ((200*total_population)*30/100)/1000000 + " MLD";
+  let totaldemand1 = (parseInt(docmestic_demand1)+parseInt(industrial_demand1)+parseInt(institurinal_demand1)+parseInt(fire_demand1)+parseInt(losses1))
+  document.getElementById("totaldemand").innerHTML = totaldemand1 + " MLD";
+  console.log(totaldemand1, total_population)
+  let max_daily_consume1 = 1.8*(totaldemand1*1000000/total_population)
+  console.log(max_daily_consume1)
+  document.getElementById("maxdailyconsup").innerHTML = Math.round(max_daily_consume1) + " lpcd"
   calculatedData.style.display = "block"
 })
 
